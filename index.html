@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar revo u</title>
+    <style>
+        .form > label:nth-child(1) {
+            margin-right: 52px ;
+        }
+        .form > #name, #alive_date {
+            width:200px;
+            margin: 0 0 10px 0;
+            height: 25px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+        textarea {
+            width: 200px;
+            height: 80px;
+            border: 1px solid grey;
+            border-radius: 8px;
+            padding: 5px
+
+        }
+    </style>
+</head>
+<body>
+   
+    
+    <h1>Form Belajar</h1>
+    <p>ini adalah website latihan pertama</p> <br> 
+    <div class="form">
+
+        <label for="name">Nama : </label>
+        <input id="name" type="text" placeholder="masukkan nama anda"/> <br> <br> 
+
+        <label for="alive_date">Tanggal Lahir : </label>
+        <input id="alive_date" type="date" placeholder="tanggal lahir" /> <br> <br>
+
+        <label for="Jenis Kelamin" style="margin-right">Jenis Kelamin : </label> 
+
+        <input type="radio" id="html" name="jenis_kelamin" value="Laki-Laki">
+        <label for="html">Laki-Laki</label> 
+        <input type="radio" id="html" name="jenis_kelamin" value="Perempuan"> 
+        <label for="html">Perempuan</label> <br>  <br>
+
+        <label style="margin-right: 45px;vertical-align: top;" for="pesan">Pesan : </label>
+        <textarea name="pesan" id="pesan" cols="30" rows="10" ></textarea> 
+        <br> <br> 
+
+        <button onclick="doClick()">submit</button> <br> <br> <br>
+    </div>
+</body>
+    <div style="display:flex; flex: 1; align-content: center; justify-content: center">
+        <table border="1" cellspacing="0" cellpadding="5"> 
+            <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Tanggal Lahir</th>
+                <th>Jenis Kelamin</th>
+                <th>Pesan</th>
+                <th>Profile</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Putra</td>
+                <td>12 Mei 2005</td>
+                <td>Laki-Laki</td>
+                <td>Hello World</td>
+                <td>
+                    <a href="https://www.google.com/">klik disini</a>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>Putri</td>
+                <td>13 Mei 2005</td>
+                <td>Perempuan</td>
+                <td>Belajar Buat Website</td>
+                <td>
+                    <a href="https://www.google.com/">klik disini</a>
+                </td>
+            </tr>
+           
+            <tr>
+                <td>Rayhan</td>
+                <td>14 Mei 2005</td>
+                <td>Laki-Laki</td>
+                <td>Selalu Semangat</td>
+                <td>
+                    <a href="https://www.google.com/">klik disini</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+        <script>
+            
+            const pesanMessage = document.querySelector('textarea[name="pesan"]');
+
+        </script>
+  
+</html>
