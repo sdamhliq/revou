@@ -1,0 +1,74 @@
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<title>FIRST WEB</title>
+
+</head>
+
+<body>
+	<header class="animate__animated animate__fadeInDown">
+		<h1 class="logo animate__animated animate__pulse animate__infinite">SDHLQ</h1>
+		<nav>
+			<ul>
+				<li><a href="#jasa">SERVICE</a></li>
+				<li><a href="mailto:saddamhaliq89@gmail.com">CONTACT</a></li>
+			</ul>
+		</nav>
+		<button class="btn-cta" onclick="redirInstagram()">Follow Me</button>
+	</header>
+	<div class="container">
+		<div class="intro">
+			<p class="title animate__animated animate__fadeInLeft">Hello, Saddam Haliq here!</p>
+			<p class="description  animate__animated animate__fadeInRight">Your Web Builder</p>
+			<img src="assets/sdamhliq 1.jpg" alt="saddam haliq 1" class="img-foto animate__animated animate__fadeInUp" />
+		</div>
+	</div>
+	<div class="parallax">
+		<div class="tentang  animate__animated animate__fadeIn animate__delay-1s">
+			<p class="title">I'm a Website Builder</p>
+			<p class="description">Ready to help you for all needs related to your website</p>
+			<div class="mt-10">
+				<button class="btn-cta" onclick="redirWhatsapp()">Let's Cooperate</button>
+			</div>
+		</div>
+		<div class="container  animate__animated animate__bounceIn animate__delay-1s">
+			<div class="card" id="jasa">
+				<div class="card-item">
+					<img src="assets/24-hours.png" alt="icon 1" class="icon" />
+					<p class="card-title">Nonstop Service</p>
+					<p class="card-description">24-hour non-stop service when you need help</p>
+				</div>
+				<div class="card-item">
+					<img src="assets/hot-deal.png" alt="icon 2" class="icon" />
+					<p class="card-title">The Cheapest Service</p>
+					<p class="card-description">The cost of the services I provide must be cheap and guaranteed</p>
+				</div>
+				<div class="card-item">
+					<img src="assets/rating.png" alt="icon 3" class="icon" />
+					<p class="card-title">684 Riview</p>
+					<p class="card-description">My clients are very happy to work with me</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p class="title">&copy; Saddam Haliq Website 2023</p>
+	</footer>
+
+	<script>
+		function redirInstagram() {
+			window.location.href = "https://instagram.com/sdamhliq"
+		}
+
+		function redirWhatsapp() {
+			window.location.href = "https://wa.me/+6289612203587"
+		}
+	</script>
+</body>
+
+</html>
